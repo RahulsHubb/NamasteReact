@@ -1,7 +1,7 @@
 const runReact = React.createElement(
-    "h1",
-    { id: "Newh1" },
-    "Hello From React"
+    "div",
+    { id: "parent" },
+    React.createElement("h1", {class:"red"}, "Created as Child")
   );
   const root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(runReact);
