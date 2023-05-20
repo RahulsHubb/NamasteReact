@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="run" id="root">
-        <h1>Hello React</h1>
+      <h1>Hello React</h1>
     </div>
 
-    <script>
+    <!-- rendering Element By JS -->
+    <!-- <script>
         let root = document.getElementById("root");
         let heading = document.createElement("H1");
         heading.innerHTML = "Hello react from JS";
         root.appendChild(heading);
 
-    </script>
-</body>
+    </script> -->
+    <!-- REACT CDN -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!-- rendering Element By REACT JS -->
+
+    <!-- <script>
+      const runReact = React.createElement(
+        "h1",
+        { id: "Newh1" },
+        "Hello From React"
+      );
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(runReact);
+    </script> -->
+    <script src="./App.js"></script>
+
+
+  </body>
 </html>
